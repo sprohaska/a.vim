@@ -811,12 +811,14 @@ function! <SID>FindOrCreateBuffer(fileName, doSplit, findSimilar)
         endif
      endfor
      " switch the the tab containing the buffer
+     let tabNr = -1  " spr: hack to avoid switching tabs.
      if (tabNr != -1)
         execute "tabn ".tabNr
      endif
 
      " Buffer was already open......check to see if it is in a window
      let bufWindow = bufwinnr(bufNr)
+     let bufWindow = -1  " spr: hack to avoid switching tabs.
      if (bufWindow == -1)
         " Buffer was not in a window so open one
         let v:errmsg=""
