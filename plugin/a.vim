@@ -133,9 +133,9 @@ call <SID>AddAlternateExtensionMapping('pxd','pyx')
 call <SID>AddAlternateExtensionMapping('PXD','PYX')
 call <SID>AddAlternateExtensionMapping('pyx','pxd')
 call <SID>AddAlternateExtensionMapping('PYX','PXD')
-" CoffeeScript and corresponding Meteor template
-call <SID>AddAlternateExtensionMapping('coffee','tpl.jade')
-call <SID>AddAlternateExtensionMapping('tpl.jade','coffee')
+" CoffeeScript and corresponding Meteor Jade template
+call <SID>AddAlternateExtensionMapping('coffee','jade')
+call <SID>AddAlternateExtensionMapping('jade','coffee')
 
 " Setup default search path, unless the user has specified
 " a path in their [._]vimrc.
